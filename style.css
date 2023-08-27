@@ -1,0 +1,457 @@
+@font-face {
+    font-family: francis;
+    src: url(Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+    font-family: barlmow;
+    src: url(Barlow/Barlow-SemiBold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: barlmow;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root{
+    --fraunces: francis; /*serif*/
+    --Barlow: barlmow;/*sans-serif*/
+    /* Primary */
+    --Soft-red: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Dark-desaturated-cyan: hsl(167, 40%, 24%);/*Graphic design text*/
+    --Dark-blue: hsl(198, 62%, 26%);/*photography text*/
+    --Dark-moderate-cyan: hsl(168, 34%, 50%);/*footer*/
+    /*Neutral*/
+    --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --Dark-grayish-blue: hsl(232, 10%, 55%);
+    --Grayish-blue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+}
+
+.relative{
+    position: relative;
+}
+
+/* ________________________________NAV BAR_________________________ */
+
+header{
+    background: url(images/desktop/image-header.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 25px 30px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.navbar{
+    justify-content: space-between;
+}
+
+.nav-link{
+    gap: 25px;
+}
+
+.nav-link a{
+    color: var(--White);
+}
+
+.contact{
+    color: var(--Very-dark-desaturated-blue) !important;
+    background-color: var(--White);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: var(--fraunces);
+    font-weight: 700;
+}
+
+
+.contact:hover{
+    background-color: #ffffff65;
+    color: white !important;
+}
+
+.big-title{
+    font-family: francis;
+    font-weight: 900;
+    font-size: 80px;
+    color: var(--White);
+    position: absolute;
+    top: 120px;
+    left: 320px;
+}
+
+.header-arrow{
+    position: absolute;
+    top: 340px;
+    left: 680px;
+}
+
+/* __________________________________MAIN GRID________________________________ */
+
+.grid-intro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 573px;
+}
+
+.grid-intro img{
+    width: 100%;
+}
+
+.box-content{
+    padding: 120px;
+}
+
+.box-content > *{
+    margin-bottom: 20px;
+}
+
+.text-title{
+    font-size: 2.5em;
+    font-family: var(--fraunces);
+    font-weight: 700 !important;
+}
+
+.link{
+    font-family: var(--fraunces);
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.link1{
+    font-family: var(--fraunces);
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.under-color{
+    position: absolute;
+    top: 344px;
+    left: 108px;
+    text-align: center;
+    background-color: hsl(7, 99%, 90%);
+    height: 8px;
+    width: 115px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.under-color1{
+    position: absolute;
+    top: 344px;
+    left: 108px;
+    text-align: center;
+    background-color: hsl(51, 100%, 79%);
+    height: 8px;
+    width: 115px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.link1:hover ~ .under-color1{
+    background-color: var(--Yellow);
+}
+
+.link:hover ~ .under-color{
+    background-color: var(--Soft-red);
+}
+
+.graphic-design{
+    background-image: url(images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Photography{
+    background-image: url(images/desktop/image-photography.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.graphic-design, .Photography{
+    text-align: center;
+    padding: 370px 150px 0 150px;
+}
+
+.graphic-design h2, .Photography h2{
+    font-family: var(--fraunces);
+    margin-bottom: 20px;
+}
+
+.graph{
+    color: var(--Dark-moderate-cyan);
+}
+
+.photo{
+    color: var(--Dark-blue);
+}
+
+.text{
+    color: var(--Very-dark-grayish-blue);
+    line-height: 1.5em;
+}
+
+.testimonials{
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    flex-direction: column;
+}
+
+.testimonials h1{
+    font-family: var(--fraunces);
+    font-weight: 700;
+    font-size: 1em;
+    letter-spacing: 8px;
+    color: var(--Grayish-blue);
+}
+
+.review-container-cards{
+    gap: 50px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.comments{
+    color: var(--Dark-grayish-blue);
+    font-family: var(--Barlow);
+    font-weight: 600;
+}
+
+.name-plate{
+    flex-direction: column;
+    gap: 8px;
+}
+
+.name{
+    font-family: var(--fraunces);
+    font-weight: 700;
+}
+
+.role-title{
+    font-weight: 600;
+    color: var(--Grayish-blue);
+}
+.image img{
+    border-radius: 100px;
+    border: 1.5px solid var(--Dark-desaturated-cyan);
+    width: 90px;
+}
+
+/* Tried different ways that I could find, but found out using grid is actually helpful to keep all the images side-by-side, fit the whole images sizes, and within the length of the screen-size */
+.bottom{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+/* Without the Hundred percent width the images will become larger than its container */
+.bottom img{
+    width: 100%;
+}
+/* _________________________________________________FOOTER_____________________________________________________ */
+
+
+footer{
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 0 20px 0;
+    background-color: var(--Dark-moderate-cyan);
+}
+
+footer > img{
+    width: 180px;
+}
+
+.links{
+    gap: 50px;
+}
+
+.links a{
+    font-size: .9em;
+    color:hsl(167, 40%, 32%);
+}
+
+.links a:hover{
+    color: white;
+}
+
+.media-icon{
+    gap: 20px;
+}
+
+.media-icon ol a:hover > svg path{
+    fill: white;
+}
+
+.pinpin path{
+    fill: white;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::MOBILE DESIGN::::::::::::::::::::::::::::::::::::::::::::: */
+
+@media only screen and (max-width:375px) {
+
+    header{
+        background-image: url(images/mobile/image-header.jpg);
+        background-position: center;
+        height: 70vh;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger path{
+        fill: rgb(123, 216, 240);
+    }
+
+    .hamburger:hover{
+        cursor: pointer;
+    }
+
+    .nav-link{
+        display: none;
+        position: absolute;
+        height: 300px;
+        width: 340px;
+        padding-top: 50px;
+        padding-left: 10px;
+        right: 20px;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--White);
+        z-index: 1;
+        text-align: center;
+    }
+
+    .nav-link a{
+        font-size: 1.5em;
+        color: var(--Grayish-blue);
+    }
+
+    .open{
+        display: flex;
+    }
+
+    .contact{
+        background-color: var(--Yellow);
+        font-weight: 500;
+        padding: 12px 30px;
+    }
+
+    .contact:hover, .contact a:hover{
+        background-color: rgba(255, 255, 0, 0.463);
+        color: black !important;
+    }
+
+    .big-title{
+        text-align: center;
+        font-size: 2.5em;
+        left: 0px;
+        letter-spacing: 10px;
+    }
+    
+    .header-arrow{
+        left: 10em;
+        top: 18em;
+        height: 150px;
+    }
+
+    /* _______________________________________GRID MAIN_______________________________ */
+    .grid-intro{
+        display: grid;
+        grid-template-columns: 375px;
+        grid-template-rows: auto auto auto auto;
+        margin-bottom: 40px;
+    }
+
+    .grid-intro img{
+        width: 375px;
+    }
+
+    .image1{
+        grid-row: 1;
+    }
+
+    .box-content{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .under-color1, .under-color{
+        top: 268px;
+        left: 128px;
+    }
+
+    .graphic-design, .Photography{
+        padding: 350px 20px 40px 20px;
+    }
+
+    .graphic-design, .Photography{
+        width: 375px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .graphic-design{
+        background-image: url(images/mobile/image-graphic-design.jpg);
+    }
+
+    .Photography{
+        background-image: url(images/mobile/image-photography.jpg);
+    }
+
+    .testimonials{
+        display: inline;
+        text-align: center;
+    }
+
+    .testimonials h1{
+        margin-bottom: 40px;
+    }
+
+    .review-container-cards{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .image-container{
+        margin-top: 40px;
+    }
+    
+    .bottom{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+
+    .bottom picture{
+        margin: 0;
+        padding: 0;
+    }
+}
