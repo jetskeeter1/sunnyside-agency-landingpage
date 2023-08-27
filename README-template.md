@@ -60,6 +60,6 @@ I'll continue to learn more on javascript so that there will be more interactive
 
 ## Author
 
-- Website - [dalton napala](https://www.your-site.com)
+- Website - [dalton napala]([https://www.your-site.com](https://jetskeeter1.github.io/sunnyside-agency-landingpage/))
 - Frontend Mentor - [@jetskeeter1](https://www.frontendmentor.io/profile/jetskeeter1)
 - Instagram - [@jetskeeter9](https://www.instagram.com/jetskeeter9)
